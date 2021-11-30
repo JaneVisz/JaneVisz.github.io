@@ -1,0 +1,313 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #202324;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
+  
+}
+
+.both_pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+/*  gap between two A4 */
+  gap: 5px;
+}
+
+.a4_page {
+  display: flex;
+/* A4 size */
+  width: 210mm;
+  height: 297mm;
+  background: white;
+  }
+
+/* first column for the little boxes */
+.column {
+  display: flex;
+/* to place the boxes under each other*/
+  flex-direction: column;
+/*   size of the column */
+  flex-basis: 350px;
+  /* background: #DCDCDC; */
+  /* background: #CDCDCD; */
+  background: #EBE9E9;
+  border: 1px solid black;
+ 
+/*   gab between little boxes  */
+  gap: 20px;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* boxes for PERSONAL, CONTACTS, LINKS, SOFT SKILLS, HOBBIES, MY TIME, REFERENCES */
+.box {
+  width: 250px;
+  font-size: 16px;
+  /* border: 3px solid red; */
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  /* border-radius: 50%; */
+  border-radius: 25px;
+  border: 6px solid #BEA8A7;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.image:hover {
+  width: 100%;
+  margin: 0;
+}
+
+.area_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 500px;
+  /* border: 3px solid black; */
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.area_text_box {
+  background: #EBE9E9;
+  border-radius: 20px;
+  flex-grow: 1;
+  border: 1px solid black;
+  /* opytat sa ci to mam dobre, posledne tri riadky */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box2 {
+  /* border: 1px solid red; */
+}
+
+/*--------------------------- AREA PRE LOGO A TEXT ---------------------------*/
+.area_logo {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  height: 240px;
+  width: 500px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.area_logoText {
+  display: inline; 
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 80px;
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------------------------*/
+.logo {
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+/*--------------------------- AREA PRE LOGO A TEXT ---------------------------*/
+
+header {
+    text-align: center;
+    /* background: #F5F5F5; */
+    background: #EBE9E9;
+    border: 1px solid black;
+    color:black;
+    border-radius: 20px;
+    margin: 0;
+    flex-grow: 0;
+  }
+
+  h1 {
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45px;
+    margin: 0;
+    font-weight: normal;
+  }
+/* @media (max-width: 700px) {
+  h1 {color: red}
+} */
+
+/* @media print {
+  body {color: rgb(173, 170, 170)}
+} */
+
+  #junior {
+    padding-bottom: 20px;
+    font-weight: normal;
+   
+  }
+
+  /* PROFILE, EDUCATION, WORK EXPERIENCE, SKILLS ETC. */
+  h3 {
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+  }
+  
+  h5 {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+section {
+  display: flex;
+}
+
+.hr-line {
+   width: 100px;
+   /* margin for left and right */
+   margin: 8px;
+   border-bottom: 2.4px solid black;
+   border-radius: 20px;
+  }
+
+#links {
+  font-size: 16px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  /* font-weight: bold; */
+}
+
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*------------------------------ DONUT GRAPH ------------------------------*/
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.bar {
+  position: relative;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background: #f2f3f4;
+}
+
+span {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.bar div {
+  position: relative;
+  width: 10px;
+  height: 7px;
+  border-radius: 10px;
+  background-color: black;
+  
+}
+
+skills:not(:last-child){
+  margin-bottom: 50px;
+}
+
+/* 1. ability, Adding css animation */
+
+#communication-bar  {
+  animation: communication-bar-fill 2s forwards;
+}
+
+@keyframes communication-bar-fill {
+  100%{
+    width: 70%;
+  }
+}
+
+/* 2. ability, Adding css animation */
+
+#self-motivation-bar  {
+  animation: self-motivation-fill 2s forwards;
+}
+
+@keyframes self-motivation-fill {
+  100%{
+    width: 80%;
+  }
+}
+
+/* 3. ability, Adding css animation */
+
+#time-management-bar  {
+  animation: time-management-fill 2s forwards;
+}
+
+@keyframes time-management-fill {
+  100%{
+    width: 50%;
+  }
+}
+
+/* 4. ability, Adding css animation */
+
+#teamwork-bar  {
+  animation: teamwork-fill 2s forwards;
+}
+
+@keyframes teamwork-fill {
+  100%{
+    width: 85%;
+  }
+}
+/*------------------------------ FINISHED DONUT GRAPH ------------------------------*/
+
+
+ul {
+  font-size: 16px;
+  /* list-style-type: circle; */
+  /* list-style-type: none; */
+   font-family: 'Catamaran', sans-serif;
+   margin-left: -10px;;
+}
+
+/* unvisible button */
+
+button {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+} 
+
