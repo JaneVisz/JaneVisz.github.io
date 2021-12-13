@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Catamaran', sans-serif;
-  
 }
 
 .both_pages {
@@ -41,7 +40,7 @@ body {
   background: #EBE9E9;
   border: 1px solid black;
  
-/*   gab between little boxes  */
+/* gap between little boxes */
   gap: 20px;
   align-items: center;
   border-radius: 20px;
@@ -131,7 +130,7 @@ body {
   margin-top: 0px;
 }
 
-/*--------------------------- AREA PRE LOGO A TEXT ---------------------------*/
+/*--------------------------- AREA for LOGO and TEXT ---------------------------*/
 
 header {
     text-align: center;
@@ -303,8 +302,6 @@ ul {
    font-family: 'Catamaran', sans-serif;
    margin-left: -10px;;
 }
-
-/* unvisible button */
 
 button {
     background: transparent;
