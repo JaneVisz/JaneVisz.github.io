@@ -62,8 +62,9 @@ body {
   width: 200px;
   height: auto;
   /* border-radius: 50%; */
-  border-radius: 25px;
-  border: 6px solid #BEA8A7;
+  border-radius: 20px;
+  /* border: 6px solid #BEA8A7; */
+  border: 4px solid black;
   margin-top: 20px;
   justify-content: center;
 }
