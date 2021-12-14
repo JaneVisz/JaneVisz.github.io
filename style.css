@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-/*  gap between two A4 */
+/* gap between two A4 */
   gap: 5px;
 }
 
